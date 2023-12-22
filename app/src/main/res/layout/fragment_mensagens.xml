@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mensagens"
+    android:background="@color/white"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+
+        android:id="@+id/telefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top|center"
+        android:layout_marginBottom="100dp"
+        android:hint="Digite o telefone"
+        android:inputType="phone"
+         />
+
+
+    <EditText
+        android:id="@+id/mensagem"
+        android:backgroundTint="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="top|center"
+        android:hint="Digite a mensagem"
+        android:layout_marginBottom="50dp"
+        />
+
+    <Button
+        android:id="@+id/botaomensagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar SMS"
+        android:layout_marginTop="500dp"
+        android:layout_gravity="top|center"
+        android:layout_marginBottom="50dp" />
+
+
+</FrameLayout>

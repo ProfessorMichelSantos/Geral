@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Geral" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/green</item>      <!--COR DA BARRA DE AÇÃO-->
+        <item name="colorPrimaryVariant">@color/red</item> <!--COR DA BARRA DE STATUS, A BARRA NO ALTO-->
+        <item name="colorButtonNormal">@color/green</item>
+        <item name="colorBackgroundFloating">@color/white</item>
+        <item name="colorSecondary">@color/gray</item>     <!--BOTAO FLOAT-->
+        <item name="colorOnSecondary">@color/gray</item>     <!--ÍCONES-->
+        <item name="android:background">@color/gray</item> <!--BACKGROUND -->
+
+    </style>
+
+    <style name="Theme.Geral" parent="Base.Theme.Geral" />
+</resources>
