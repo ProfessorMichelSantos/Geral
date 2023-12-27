@@ -7,7 +7,7 @@ import androidx.fragment.app.FragmentTransaction
 import com.aula.geral.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-
+//VERSAO  1
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
