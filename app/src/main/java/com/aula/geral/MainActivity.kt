@@ -1,7 +1,10 @@
 package com.aula.geral
 
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.FragmentTransaction
 import com.aula.geral.databinding.ActivityMainBinding
@@ -10,12 +13,23 @@ class MainActivity : AppCompatActivity() {
 //VERSAO  1
     private lateinit var binding: ActivityMainBinding
 
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        Log.d("Activity", "Changed")
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE)
+        {
+            Toast.makeText(this, "A tela mudou para landscape", Toast.LENGTH_SHORT).show()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
+
+
 
 
         binding.escuro.setOnCheckedChangeListener { compoundButton, ischecked ->
@@ -62,4 +76,6 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+
+
 }

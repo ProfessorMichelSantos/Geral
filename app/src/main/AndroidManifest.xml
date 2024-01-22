@@ -31,9 +31,12 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="sensor">
 
         </activity>
     </application>
 
 </manifest>
+
+    <!--android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" manualmente-->
